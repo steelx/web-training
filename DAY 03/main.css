@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -52,42 +52,102 @@ table {
 body {
 	background-color: #a4d9ff;
 }
-.floatRight {
+.floatPic {
 	float: right;
+	margin-left: 10px;
 }
 #wrapper {
 	width: 812px;
 	border: 2px solid #000;
-	margin: 0 auto;
+	margin: 20px auto;
 	overflow: hidden;
+	background: #fff;
 }
 #wrapper h1 {
-	font-size: 20px;
-	line-height: 40px;
+	font-size: 45px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
 }
 #wrapper p {
 	font-size: 14px;
 	line-height: 16px;
+	text-align: justify;
 }
+
 #bigBox, .box1 {
 	float: left;
+
 }
+.page {
+	float: right;
+	margin: 20px 0;
+	color: #666;
+}
+
 #bigBox {
 	width: 550px;
-	border: 1px solid #333;
 	overflow: hidden;
 	padding: 5px;
 }
 
 .box1 {
 	width: 230px;
-	background-color: #fcff8b;
+	background-color: #fff;
 	padding: 10px;
 	float: left;
+	padding-bottom: 15px;
+	border-bottom: 1px dotted #333;
+
 }
 .box1 h3 {
 	background-color: #000;
 	color: #ffffff;
-	padding: 0 3px;
-	margin-bottom: 5px;
+	padding: 3px;
+	margin-bottom: 11px;
+}
+div.topPart {
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #333;
+}
+/*-------------------------------
+ Bottom Box style.
+ -------------------------*/
+
+.clear {
+	clear:both;
+	border-bottom: 1px dotted #333;
+	margin: 15px 0 10px;
+}
+
+.floatLeft, .floatRight {
+	width:384px;
+	float: left;
+	overflow: hidden;
+	padding: 5px;
+}
+
+div.top p {
+	margin: 5px 0;
+	background: #000;
+	color: #fff;
+	padding:1px;
+}
+div.bottom {
+	column-count:2;
+}
+
+div.floatLeft h3{
+	font-size: 34px;
+	margin: 5px 0 10px;
+}
+div.floatRight {
+	border-left: 1px dotted #333;
+}
+div.floatRight h4 {
+	font-size: 26px;
+	margin-bottom: 15px;
+	
+}
+div.floatLeft p , div.floatRight p {
+	text-align: justify;
 }
