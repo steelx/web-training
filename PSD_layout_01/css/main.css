@@ -137,3 +137,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
 }
+
+.menu li a:hover {
+    border-bottom: 2px solid #fdd835;
+}
