@@ -1,9 +1,10 @@
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-html {
+  html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    font-family: 'Montserrat', sans-serif;
 }
 
 ::-moz-selection {
@@ -105,4 +106,34 @@ textarea {
    ========================================================================== */
 body {
     background-color: #ffffff;
+}
+
+.header {
+    background-color: #e94643;
+    height:80px;
+    border-top: 20px solid #04e4a2;
+}
+
+.navbar {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 20px 35px;
+    display: block;
+    float: left;
+}
+
+.menu {
+    float: right;
+    margin: 29px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
 }
