@@ -114,13 +114,14 @@ body {
     border-top: 20px solid #04e4a2;
 }
 
+.featured,
 .navbar {
-    width: 1024px;
+    width: 1200px;
     margin: 0 auto;
 }
 
 .logo {
-    margin: 20px 35px;
+    margin: 20px 0 20px 144px;
     display: block;
     float: left;
 }
@@ -140,4 +141,33 @@ body {
 
 .menu li a:hover {
     border-bottom: 2px solid #fdd835;
+}
+
+.featured {
+    overflow: hidden;
+}
+.featured-text,
+.phone {
+    width: 600px;
+    float: left;
+    z-index: 10;
+    position: relative;
+}
+
+.green-element {
+    background: url("../img/green-element.png") no-repeat;
+    width: 667px;
+    height: 698px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.phone {
+    height: 818px;
+    background-image: url("../img/phone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.featured-text {
+
 }
