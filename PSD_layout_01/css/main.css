@@ -143,12 +143,18 @@ body {
     border-bottom: 2px solid #fdd835;
 }
 
+
+.wrapper {
+    background-color: #ef5350;
+    height: 580px;
+    position: relative;
+}
 .featured {
     overflow: hidden;
+    padding-top: 63px;
 }
 .featured-text,
 .phone {
-    width: 600px;
     float: left;
     z-index: 10;
     position: relative;
@@ -160,14 +166,25 @@ body {
     height: 698px;
     position: absolute;
     left: 0;
+    top: 74px;
     z-index: 1;
 }
 .phone {
+    width: 600px;
     height: 818px;
     background-image: url("../img/phone.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 .featured-text {
+    width: 500px;
+    padding: 50px;
+    color: #ffffff;
+}
 
+
+.contact-form {
+    width:580px;
+    background-color: #04e4a2;
+    float: right;
 }
