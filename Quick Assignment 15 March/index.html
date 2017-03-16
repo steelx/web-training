@@ -33,15 +33,30 @@
 			background-color: #60ff00;
 			top: -50px;
 			left: -50px;
+			padding-bottom: 20px\9; /* \9 targeting style for IE9 and below  */
 		}
+
+		.clearfix:before,
+		.clearfix:after {
+		    content: " ";
+		    display: table;
+		}
+
+		.clearfix:after {
+		    clear: both;
+		}
+
+		.clearfix {
+		    *zoom: 1; /* * targeting style only for IE7 & IE8   */
+		}
+
 
 	</style>
 
 </head>
 <body>
 
-
-<div class="wrapper">
+<div class="wrapper clearfix">
 	<div class="logo">possition Absolute</div>
 	<div class="big">
 		big
@@ -52,8 +67,6 @@
 	<div class="small">
 		small 2
 	</div>
-
-	<div style="clear: both;"></div>
 </div>
 
 </body>
