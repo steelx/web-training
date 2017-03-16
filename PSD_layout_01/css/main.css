@@ -114,6 +114,7 @@ body {
     border-top: 20px solid #04e4a2;
 }
 
+.contact-wrapper,
 .featured,
 .navbar {
     width: 1200px;
@@ -147,17 +148,14 @@ body {
 .wrapper {
     background-color: #ef5350;
     height: 580px;
-    position: relative;
 }
 .featured {
-    overflow: hidden;
     padding-top: 63px;
+    position: relative;
 }
 .featured-text,
 .phone {
-    float: left;
     z-index: 10;
-    position: relative;
 }
 
 .green-element {
@@ -165,7 +163,7 @@ body {
     width: 667px;
     height: 698px;
     position: absolute;
-    left: 0;
+    left: -75px;
     top: 74px;
     z-index: 1;
 }
@@ -175,11 +173,14 @@ body {
     background-image: url("../img/phone.png");
     background-repeat: no-repeat;
     background-position: center;
+    position: absolute;
 }
 .featured-text {
+    float: right;
     width: 500px;
     padding: 50px;
     color: #ffffff;
+    position: relative;
 }
 .know-more {
     border-top: 1px dashed #e84542;
@@ -203,6 +204,30 @@ body {
 
 .contact-form {
     width:580px;
-    background-color: #04e4a2;
     float: right;
+}
+.contact-form h3 {
+    padding-left: 25px;
+}
+
+.form-input-block {
+    width: 245px;
+    float: left;
+    margin: 5px 0;
+}
+
+.form-input-block input {
+    width: 245px;
+}
+
+.form-block textarea,
+.form-input-block input {
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #c9e8e0;
+    text-indent: 20px;
+    padding: 5px;
+}
+.form-block {
+    width: 100%;
 }
